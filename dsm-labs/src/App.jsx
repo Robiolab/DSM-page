@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
+import { LinkProvider } from './link.jsx'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Lab1 from './labs/lab1/Lab1'
@@ -31,6 +32,7 @@ const COURSES = [
 
 function App() {
   return (
+    <LinkProvider linkComponent={Link} basePath="">
     <div className="app">
       <Navbar />
       <main className="main-content">
@@ -70,6 +72,7 @@ function App() {
         </div>
       </footer>
     </div>
+    </LinkProvider>
   )
 }
 

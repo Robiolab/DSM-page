@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { Link } from 'react-router-dom'
+import { DsmLink } from '../link.jsx'
 import VotePanel from './VotePanel'
 
 /* ============================================================
@@ -184,14 +184,14 @@ export default function Home() {
           </div>
           <div className="lab-cards">
             {prelabs.map(lab => (
-              <Link key={lab.num} to={lab.path} className="lab-card">
+              <DsmLink key={lab.num} to={lab.path} className="lab-card">
                 <span className="lab-number" style={{ background: lab.color }}>
                   Pre-Lab {lab.num}
                 </span>
                 <h3>{lab.title}</h3>
                 <p>{lab.desc}</p>
                 <ApoyoBtn id={`lab${lab.num}`} />
-              </Link>
+              </DsmLink>
             ))}
           </div>
         </div>
@@ -225,7 +225,7 @@ export default function Home() {
           <div className="lab-cards">
             {filtered.map(lab =>
               lab.status === 'available' ? (
-                <Link
+                <DsmLink
                   key={lab.id}
                   to={lab.path}
                   className="lab-card lab-card--bank"
@@ -237,7 +237,7 @@ export default function Home() {
                   <h3>{lab.title}</h3>
                   <p>{lab.desc}</p>
                   <ApoyoBtn id={lab.id} />
-                </Link>
+                </DsmLink>
               ) : (
                 <div
                   key={lab.id}

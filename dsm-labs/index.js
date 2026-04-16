@@ -1,0 +1,26 @@
+import './src/index.css'
+import './src/App.css'
+
+export { LinkProvider, DsmLink, useDsmLink } from './src/link.jsx'
+
+export { default as Navbar } from './src/components/Navbar.jsx'
+export { default as Home } from './src/components/Home.jsx'
+export { default as VotePanel } from './src/components/VotePanel.jsx'
+
+export { default as Lab1 } from './src/labs/lab1/Lab1.jsx'
+export { default as Lab2 } from './src/labs/lab2/Lab2.jsx'
+export { default as Lab3 } from './src/labs/lab3/Lab3.jsx'
+export { default as Lab4 } from './src/labs/lab4/Lab4.jsx'
+
+export { default as AltCinematica } from './src/labs/altCinematica/AltCinematica.jsx'
+export { default as AltDinamica } from './src/labs/altDinamica/AltDinamica.jsx'
+export { default as AltEnergias } from './src/labs/altEnergias/AltEnergias.jsx'
+export { default as AltVibraciones } from './src/labs/altVibraciones/AltVibraciones.jsx'
+export { default as AltSlider } from './src/labs/altSlider/AltSlider.jsx'
+export { default as AltImpacto } from './src/labs/altImpacto/AltImpacto.jsx'
+export { default as AltRobot3R } from './src/labs/altRobot3R/AltRobot3R.jsx'
+export { default as AltMulticuerpo } from './src/labs/altMulticuerpo/AltMulticuerpo.jsx'
+export { default as AltDuffing } from './src/labs/altDuffing/AltDuffing.jsx'
+export { default as AltVirtuales } from './src/labs/altVirtuales/AltVirtuales.jsx'
+export { default as AltAbsorsor } from './src/labs/altAbsorsor/AltAbsorsor.jsx'
+export { default as AltVigas } from './src/labs/altVigas/AltVigas.jsx'

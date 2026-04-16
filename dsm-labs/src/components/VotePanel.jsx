@@ -1,5 +1,5 @@
 import { useState, useCallback, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { DsmLink } from '../link.jsx'
 
 /* ============================================================
    CONSTANTS
@@ -131,9 +131,9 @@ export default function VotePanel({ labs }) {
               </span>
 
               {/* title */}
-              <Link to={lab.path} className="vote-title" tabIndex={0}>
+              <DsmLink to={lab.path} className="vote-title" tabIndex={0}>
                 {lab.title}
-              </Link>
+              </DsmLink>
 
               {/* bar */}
               <div className="vote-bar-wrap" title={`${pct.toFixed(0)}% del líder`}>

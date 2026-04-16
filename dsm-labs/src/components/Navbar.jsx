@@ -1,17 +1,17 @@
-import { NavLink } from 'react-router-dom'
+import { DsmLink } from '../link.jsx'
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <NavLink to="/" className="navbar-brand">
+        <DsmLink to="/" className="navbar-brand">
           DSM Labs
-        </NavLink>
+        </DsmLink>
         <ul className="navbar-links">
-          <li><NavLink to="/lab1" className={({ isActive }) => isActive ? 'active' : ''}>Lab 1: Cinematica RR</NavLink></li>
-          <li><NavLink to="/lab2" className={({ isActive }) => isActive ? 'active' : ''}>Lab 2: Clasificacion</NavLink></li>
-          <li><NavLink to="/lab3" className={({ isActive }) => isActive ? 'active' : ''}>Lab 3: Pata Robot</NavLink></li>
-          <li><NavLink to="/lab4" className={({ isActive }) => isActive ? 'active' : ''}>Lab 4: Vibraciones</NavLink></li>
+          <li><DsmLink to="/lab1">Lab 1: Cinematica RR</DsmLink></li>
+          <li><DsmLink to="/lab2">Lab 2: Clasificacion</DsmLink></li>
+          <li><DsmLink to="/lab3">Lab 3: Pata Robot</DsmLink></li>
+          <li><DsmLink to="/lab4">Lab 4: Vibraciones</DsmLink></li>
         </ul>
       </div>
     </nav>
